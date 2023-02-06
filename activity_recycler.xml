@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vguide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".6"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hguide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".3"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="@color/teal_700"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/vguide"
+        app:layout_constraintTop_toTopOf="@+id/hguide2"
+        />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:layout_constraintTop_toTopOf="@+id/hguide2"
+        app:layout_constraintEnd_toEndOf="@+id/vguide2"
+        />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="@color/design_default_color_error"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/vguide2"
+        app:layout_constraintTop_toTopOf="@+id/hguide2"
+
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hguide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5"/>
+
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_500"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/vguide2"
+        app:layout_constraintTop_toTopOf="@+id/hguide3"
+
+        />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="@color/teal_200"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="@+id/hguide"
+        app:layout_constraintEnd_toEndOf="@+id/vguide"
+        />
+    <View
+        android:id="@+id/view6"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:background="?android:attr/colorFocusedHighlight"
+        app:layout_constraintTop_toTopOf="@+id/hguide5"
+        app:layout_constraintEnd_toEndOf="@+id/vguide"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hguide5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".7"
+
+        />
+
+    <Switch
+        android:id="@+id/Switch"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:text="Aadi"
+        android:textSize="23sp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
